@@ -1,31 +1,38 @@
-import torch
+﻿import torch
 
-# ==================== 设备 ====================
+# device
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-# ==================== 数据集 ====================
-DATASET = "FingerMovements"
-DATA_DIR = "./data"
+# dataset (will be overridden per run)
+DATASET = 'condition'
+DATA_DIR = './data'
+NUM_NODES = 17
+NUM_CLASSES = 3
 
-# ==================== 周期感知预处理 ====================
-PERIOD_LENGTH = 10          # 周期切片后固定长度（可视为周期对齐后的时间步）
+# long sequence downsampling
+MAX_TIMESTEPS = 200
 
-# ==================== 图构建 ====================
-TOPK = 5                    # KNN 稀疏化 TopK
-GRAPH_TYPE = "correlation"  # 可选: "correlation" | "knn" | "cosine"
+# hypergraph
+K_HYPER = 5
+HGNN_DIM = 64
+HGNN_LAYERS = 2
 
-# ==================== 模型维度 ====================
-NUM_NODES = 28              # 多元变量数 D（节点数）
-INPUT_LEN = PERIOD_LENGTH   # 每个节点的输入特征长度 = 时间步长
-HIDDEN_DIM = 128            # 图卷积隐层维度
-NUM_CLASSES = 2             # 分类类别数
-NUM_LAYERS = 2              # GCN 层数
-DROPOUT = 0.3               # Dropout 比率
+# GRU
+GRU_DIM = 64
+GRU_LAYERS = 1
 
-# ==================== 训练 ====================
+# sample graph (DTW)
+K_SAMPLE = 5
+
+# semi-supervised GCN
+SEMI_DIM = 64
+SEMI_LAYERS = 2
+
+# training
 EPOCHS = 100
-LR = 0.001
 BATCH_SIZE = 32
-WEIGHT_DECAY = 5e-4
-EARLY_STOPPING = 15         # 早停耐心值
-VAL_RATIO = 0.2             # 从训练集划分验证集比例
+LR = 1e-3
+VAL_RATIO = 0.2
+PATIENCE = 10
+EARLY_STOP_DELTA = 1e-4
+DROPOUT = 0.2

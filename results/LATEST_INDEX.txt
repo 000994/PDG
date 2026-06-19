@@ -1,0 +1,28 @@
+PDGNetV2 对比框架 - 最新结果索引
+================================
+
+最新实验 (2026-06-19):
+  日期: 2026-06-19 19:04:53
+  模型: PDGNetV2 (No Period Slicing)
+  结果文件: 20260619_191140_comparison.*
+
+关键数字:
+  ✗ 赢: 0/12
+  ✗ 输: 12/12
+  ✗ 平均差异: -29.55%
+  ✗ 最坏: Libras (-56.0%)
+  ✓ 最好: AtrialFibrillation (-6.3%)
+
+快速查看:
+  cat 20260619_191140_comparison.md
+
+下一步改进:
+  1. 阅读 ../QUICK_ITERATION.md (方案1: 恢复HGNN)
+  2. 修改 model.py
+  3. 运行 python benchmark_comparison.py
+  4. 对比版本: python compare_experiments.py OLD.json NEW.json
+
+相关文件:
+  COMPARISON_FRAMEWORK_SUMMARY.md - 完整说明
+  EXPERIMENT_GUIDE.md - 工作流程
+  README.md - 结果存储说明

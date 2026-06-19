@@ -1,0 +1,271 @@
+{
+  "timestamp": "2026-06-19T22:37:00.627169",
+  "model": "PDGNetV2_no_period_slicing",
+  "description": "PDGNetV2 without period slicing - full temporal information preserved",
+  "datasets": {
+    "condition": {
+      "dataset_info": {
+        "nodes": 17,
+        "classes": 3,
+        "timesteps": 60,
+        "train_samples": 1764,
+        "test_samples": 441
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.94
+      },
+      "best_classical_ml": {
+        "acc": 1.0,
+        "model": "LogisticRegression"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.94,
+        "classical_acc": 1.0,
+        "improvement": -6.000000000000005
+      }
+    },
+    "FingerMovements": {
+      "dataset_info": {
+        "nodes": 28,
+        "classes": 2,
+        "timesteps": 50,
+        "train_samples": 316,
+        "test_samples": 100
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.5
+      },
+      "best_classical_ml": {
+        "acc": 0.66,
+        "model": "LogisticRegression"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.5,
+        "classical_acc": 0.66,
+        "improvement": -16.000000000000004
+      }
+    },
+    "NATOPS": {
+      "dataset_info": {
+        "nodes": 24,
+        "classes": 6,
+        "timesteps": 51,
+        "train_samples": 180,
+        "test_samples": 180
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.74
+      },
+      "best_classical_ml": {
+        "acc": 0.9056,
+        "model": "LogisticRegression"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.74,
+        "classical_acc": 0.9056,
+        "improvement": -16.559999999999995
+      }
+    },
+    "Epilepsy": {
+      "dataset_info": {
+        "nodes": 3,
+        "classes": 4,
+        "timesteps": 206,
+        "train_samples": 137,
+        "test_samples": 138
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.87
+      },
+      "best_classical_ml": {
+        "acc": 0.8406,
+        "model": "SVM_RBF"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.87,
+        "classical_acc": 0.8406,
+        "improvement": 2.939999999999998
+      }
+    },
+    "BasicMotions": {
+      "dataset_info": {
+        "nodes": 6,
+        "classes": 4,
+        "timesteps": 100,
+        "train_samples": 40,
+        "test_samples": 40
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 1.0
+      },
+      "best_classical_ml": {
+        "acc": 0.925,
+        "model": "RandomForest"
+      },
+      "comparison": {
+        "pdgnet_acc": 1.0,
+        "classical_acc": 0.925,
+        "improvement": 7.499999999999996
+      }
+    },
+    "HandMovementDirection": {
+      "dataset_info": {
+        "nodes": 10,
+        "classes": 4,
+        "timesteps": 400,
+        "train_samples": 160,
+        "test_samples": 74
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.2
+      },
+      "best_classical_ml": {
+        "acc": 0.5811,
+        "model": "LogisticRegression"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.2,
+        "classical_acc": 0.5811,
+        "improvement": -38.10999999999999
+      }
+    },
+    "SelfRegulationSCP2": {
+      "dataset_info": {
+        "nodes": 7,
+        "classes": 2,
+        "timesteps": 1152,
+        "train_samples": 200,
+        "test_samples": 180
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.53
+      },
+      "best_classical_ml": {
+        "acc": 0.5556,
+        "model": "KNN_k5"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.53,
+        "classical_acc": 0.5556,
+        "improvement": -2.5599999999999956
+      }
+    },
+    "ERing": {
+      "dataset_info": {
+        "nodes": 4,
+        "classes": 6,
+        "timesteps": 65,
+        "train_samples": 30,
+        "test_samples": 270
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.33
+      },
+      "best_classical_ml": {
+        "acc": 0.9556,
+        "model": "LogisticRegression"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.33,
+        "classical_acc": 0.9556,
+        "improvement": -62.559999999999995
+      }
+    },
+    "UWaveGestureLibrary": {
+      "dataset_info": {
+        "nodes": 3,
+        "classes": 8,
+        "timesteps": 315,
+        "train_samples": 120,
+        "test_samples": 320
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.39
+      },
+      "best_classical_ml": {
+        "acc": 0.875,
+        "model": "KNN_k5"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.39,
+        "classical_acc": 0.875,
+        "improvement": -48.5
+      }
+    },
+    "Cricket": {
+      "dataset_info": {
+        "nodes": 6,
+        "classes": 12,
+        "timesteps": 1197,
+        "train_samples": 108,
+        "test_samples": 72
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.43
+      },
+      "best_classical_ml": {
+        "acc": 0.9444,
+        "model": "SVM_RBF"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.43,
+        "classical_acc": 0.9444,
+        "improvement": -51.44
+      }
+    },
+    "Libras": {
+      "dataset_info": {
+        "nodes": 2,
+        "classes": 15,
+        "timesteps": 45,
+        "train_samples": 180,
+        "test_samples": 180
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.28
+      },
+      "best_classical_ml": {
+        "acc": 0.8,
+        "model": "RandomForest"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.28,
+        "classical_acc": 0.8,
+        "improvement": -52.0
+      }
+    },
+    "AtrialFibrillation": {
+      "dataset_info": {
+        "nodes": 2,
+        "classes": 3,
+        "timesteps": 640,
+        "train_samples": 15,
+        "test_samples": 15
+      },
+      "pdgnet": {
+        "status": "OK",
+        "acc": 0.33
+      },
+      "best_classical_ml": {
+        "acc": 0.5333,
+        "model": "SVM_RBF"
+      },
+      "comparison": {
+        "pdgnet_acc": 0.33,
+        "classical_acc": 0.5333,
+        "improvement": -20.33
+      }
+    }
+  }
+}
