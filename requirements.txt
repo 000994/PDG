@@ -1,0 +1,15 @@
+# Core numerical and deep-learning stack
+numpy>=1.26,<3
+# CUDA 12.4 build for NVIDIA GPU training (requires a CUDA 12.4-compatible driver)
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+
+# Classical ML baselines and evaluation metrics
+scikit-learn>=1.4,<2
+
+# UEA/UCR multivariate time-series download and conversion utility
+sktime>=0.30,<1
+
+# Explicit runtime dependencies used by sktime and its dataset loaders
+scipy>=1.11,<2
+pandas>=2.1,<3

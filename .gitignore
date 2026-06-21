@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.venv/
 .idea/
 best.pth
 best_pretrain.pth
