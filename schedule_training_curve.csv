@@ -58,3 +58,6 @@ condition,1,75,1.0,last_epoch,1,1.097501,0.594671
 condition,1,75,1.0,last_epoch,10,1.091122,0.336168
 condition,1,75,1.0,last_epoch,25,1.068679,0.339002
 condition,1,75,1.0,last_epoch,50,0.847260,0.671202
+condition,1,75,1.0,last_epoch,75,0.801305,0.333333
+condition,2,75,1.0,last_epoch,1,1.099265,0.051587
+condition,2,75,1.0,last_epoch,10,1.096900,0.336168
